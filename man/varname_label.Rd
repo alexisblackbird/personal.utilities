@@ -2,34 +2,24 @@
 % Please edit documentation in R/varname_label.R
 \name{varname_label}
 \alias{varname_label}
-\title{varname_label
- 
- Renames variables based on text parsed from a data key.
- 
- Renames variables by parsing text from descriptions of the variable. 
- Must be in the format of a data frame (named datakey) with variables matching the data set (named data), and containing only a single string.
- Intended to work with Qualtrics' output of question text. 
- 
- @param vargrp String pattern to rename, renames all variables with this pattern in them.
- @param label A string common label to preface the new variable name with. 
- @param pattern A string section to be removed from labels in the data key, such that any remaining text is added to the variable name.
- @param key True returns the renamed data key, false returns the data. Defaults to false.
- @export}
+\title{varname_label}
 \usage{
 varname_label(vargrp, label, pattern, key = FALSE)
 }
+\arguments{
+\item{vargrp}{String pattern to rename, renames all variables with this pattern in them.}
+
+\item{label}{A string common label to preface the new variable name with.}
+
+\item{pattern}{A string section to be removed from labels in the data key, such that any remaining text is added to the variable name.}
+
+\item{key}{True returns the renamed data key, false returns the data. Defaults to false.}
+}
 \description{
-varname_label
- 
- Renames variables based on text parsed from a data key.
- 
- Renames variables by parsing text from descriptions of the variable. 
- Must be in the format of a data frame (named datakey) with variables matching the data set (named data), and containing only a single string.
- Intended to work with Qualtrics' output of question text. 
- 
- @param vargrp String pattern to rename, renames all variables with this pattern in them.
- @param label A string common label to preface the new variable name with. 
- @param pattern A string section to be removed from labels in the data key, such that any remaining text is added to the variable name.
- @param key True returns the renamed data key, false returns the data. Defaults to false.
- @export
+Renames variables based on text parsed from a data key.
+}
+\details{
+Renames variables by parsing text from descriptions of the variable.
+Must be in the format of a data frame (named datakey) with variables matching the data set (named data), and containing only a single string.
+Intended to work with Qualtrics' output of question text.
 }
