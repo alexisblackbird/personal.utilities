@@ -11,6 +11,6 @@ nozero <- function(x){
   #should add a warning if input >= 1
   out <- round(x, digits = 3)
   out <- paste0(out)
-  out <- stringr::str_trunc(out, 4, "left", ellipsis = "")
+  out <- stringr::str_replace(out, "0.", ".")
   return(out)
 }
